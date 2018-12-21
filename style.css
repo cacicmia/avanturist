@@ -1,0 +1,277 @@
+/*AVANTURIST CSS*/
+/*reset ******************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* osnovno uređivanje HTML elemenata *************/
+body{
+    background-color:#EEE;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color:#333;
+
+}
+a{
+    text-decoration: none;
+}
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Racing Sans One', cursive;
+    font-weight: lighter;
+}
+img, 
+video {
+    max-width:100%;
+    height:auto;
+}
+video{
+    border: 2px solid #FFF;
+    outline: 1px solid #999;
+}
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 10px;
+}
+/* layout ****************************************/
+
+#menu,
+#pageFooter,
+#pageHeader,
+#content,
+#sidebar{
+    padding: 1em;
+}
+#menu, 
+#pageFooter {
+    background-color: #333;
+    color:#EEE;
+}
+
+#content{
+    width: 75%;
+    float: left;
+}
+#sidebar{
+    width: 25%;
+    float: right;
+}
+.wrapper{
+    max-width:1200px;
+    margin:1em auto;
+    width:100%;
+}
+.clearfix:after{
+    content:" ";
+    display:block;
+    clear:both;
+}
+/*navigacija *******************************/
+
+/*glavni izbornik*/
+#menu .wrapper {
+    margin:0 auto;
+}
+#menu ul{
+    width: 75%;
+    float: left;
+    list-style-type: none;
+    
+}
+#menu li{
+    display: inline;
+    margin-right: 2em;
+}
+#menu a{
+    font-size:20px;
+    color:#EEE;
+}
+#menu a:visited{
+    color:#999
+}
+#menu a:hover{
+    color:#F93;
+}
+/*tražilica*/
+#searchform{
+    width: 25%;
+    float: left;
+}
+#search-icon{
+    vertical-align: middle;
+}
+#s{
+    width:84%;
+}
+/* Zaglavlje ****************/
+#pageHeader{
+    
+    height: 480px;
+    color: #FFF;
+    display: flex; 
+    background: url(slike/header.jpg) no-repeat center center/cover;   
+   
+}
+#pageHeader .wrapper{
+    margin: auto;
+    align-self: auto;
+}
+#pageHeader h1 {
+    font-size:86px;
+    margin-bottom:0;
+}
+#pageHeader p{
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 32px;
+    margin-bottom:0;
+}
+/* Main***************/
+.post{
+    border-bottom: 1px solid #CCC; 
+    padding-bottom: 20px;
+    margin-bottom: 20px; 
+}
+.post img {
+    width: 33%;
+    float:left;
+}
+.post h2,
+.post p,
+.post a {
+    width: 65%;
+    float:right;
+}
+.post a {
+    text-align: right;
+    color:#333;
+    font-size: 12px;
+    font-style: italic;
+}
+.post a:visited { 
+    color:#999;
+}
+.post a:hover {
+    color:#F93;
+}
+/* Aside *******/
+#sidebar ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+#sidebar a {
+    color:#333;
+    border-bottom: 1px solid #CCC;
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+#sidebar a:visited {
+    color:#999;
+}
+#sidebar a:hover {
+    color:#F93;
+}
+/* Footer ***********************/
+#pageFooter h1 { 
+    font-size: 22px;
+}
+#pageFooter .wrapper div {
+    border-top:1px solid #999;
+    padding: 10px 0;
+}
+#pageFooter ul {
+    list-style-type: none;
+    width:25%;
+    float:left;
+
+}
+#pageFooter li {
+    margin-bottom: 10px;
+}
+#pageFooter a {
+    color: #EEE;
+}
+#pageFooter a:visited {
+    color:#999;
+}
+#pageFooter a:hover {
+    color:#F93;
+}
+#pageFooter i {
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#pageFooter ul:last-of-type{
+    text-align: right; 
+}
+#pageFooter ul:last-of-type li{
+    display: inline;
+}
+#pageFooter .wrapper div:last-of-type{
+    text-align: right;
+}
+/* O Nama*******************/
+#content .about{
+    margin-bottom: 1em;
+}
+.container {
+    display:flex;
+    margin-bottom:2em;
+}
+.container article {
+    margin: 5px;
+  }
+
+/*Upiti i rezervacije ******/
+#content #calendar {
+    margin: 1em auto;
+}
+#content #calendar td{
+    margin: 0 auto;
+    
+}
+#content #calendar td:first-child{
+   color: #229;
+}
+#content #calendar td {
+    width: 2em;
+    height:1.5em;
+    text-align: center;
+}
+/*Kontakt*******************/
+ #kontakt {
+    margin: 0 50px;
+    text-align: center;
+}
+
+#kontakt #usluge, 
+#kontakt #ime,
+#kontakt #email,
+#kontakt #submitbtn {
+    width: 75%;
+    height: 2.5em;
+}
+#kontakt #msg{
+    width: 75%;
+    height: 15em;
+}
+#kontakt #submitbtn{
+
+    color: #EEE;
+    background-color: #333; 
+    border: none;
+    margin-top: 5px;
+    font-weight: bold;
+}
