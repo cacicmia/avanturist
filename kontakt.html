@@ -42,7 +42,7 @@
         <main id="content">
             <h1>Kontakt</h1>
             <div class="kontakt">
-                <form action="" name="kontakt" method="POST" type="text/plain" autocomplete="on" id="kontakt" >
+                <form action="" name="kontakt" method="POST" enctype="text/plain" autocomplete="on" id="kontakt" >
                     <p><label for="ime">Ime i prezime:<br>
                         <input type="text" id="ime" name="ime" size="100">
                     </label></p>
@@ -59,7 +59,7 @@
                             <input type="radio" name="usluge" id="ne">
                         </label></p>
                     <p><label for="usluge">Koja vrsta usluge iz naše ponude Vas zanima? <br>
-                        <select name="usluge" id="usluge" value="usluge">
+                        <select name="usluge" id="usluge">
                             <option value="ljetovanja">Ljetovanja</option>
                             <option value="zimovanja">Zimovanja</option>
                             <option value="daleka-putovanja">Daleka putovanja</option>
@@ -67,7 +67,7 @@
                             <option value="rafting">Rafting</option>
                             <option value="slobodno-penjanje">Slobodno penjanje</option>
                 
-                        </select></p>
+                        </select></label></p>
                     <label for="msg">Vaša poruka: <br>
                     <textarea name="msg" id="msg" cols="86" rows="10" ></textarea>
                     </label>
